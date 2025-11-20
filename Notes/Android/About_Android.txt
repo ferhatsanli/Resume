@@ -1,0 +1,14 @@
+Self-motivated and passionate Android Developer with a solid foundation in Kotlin, Jetpack 
+Compose, and modern mobile application development. Background in Information Systems 
+Engineering with hands-on experience in automation and backend development. Currently focused 
+on building RESTful Android applications and UI components using Jetpack Compose. Eager to 
+contribute to team-oriented, innovative environments and continuously enhance technical skills.
+
+
+Skills
+Show your top skills — add up to 5 skills you want to be known for. They’ll also appear in your Skills section.
+
+Kotlin
+Android
+REST APIs
+Firebase

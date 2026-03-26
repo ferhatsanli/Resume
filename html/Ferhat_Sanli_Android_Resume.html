@@ -1,220 +1,311 @@
 <!doctype html>
 <html lang="en">
 <head>
-<meta charset="utf-8" />
+<meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Ferhat Sanli — Android Resume</title>
+<title>Ferhat Sanli — Android Engineer Resume</title>
 
 <style>
-:root { --fg:#111; --muted:#555; --line:#e6e6e6; }
+@page { size: A4; margin: 13mm; }
 
-html, body {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
-  font-size: 14px;
-  color: var(--fg);
-  margin: 0;
-  padding: 24px;
+:root{
+  --bg: #ffffff;
+  --text: #111827;
+  --muted: #6b7280;
+  --line: #e5e7eb;
+  --primary: #2563eb;
+  --primary-2: #06b6d4;
 }
 
-.page { max-width: 880px; margin: 0 auto; }
-
-header {
-  text-align: center;
-  margin-bottom: 8px;
+html, body{
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;
+  font-size:12.4px;
+  color:var(--text);
+  margin:0;
+  padding:0;
 }
 
-h1 { margin: 0; font-size: 26px; }
-
-.contact { margin-top: 6px; color: var(--muted); line-height: 1.3; }
-.meta { margin-top: 4px; font-size: 13px; color: var(--muted); }
-
-section { margin-top: 14px; }
-
-h2 {
-  font-size: 15px;
-  margin: 0 0 6px 0;
-  padding: 4px 0;
-  border-bottom: 1px solid var(--line);
+.page{
+  max-width:860px;
+  margin:0 auto;
 }
 
-p { margin: 0 0 6px 0; line-height: 1.45; }
-
-ul { margin: 4px 0 0 16px; padding: 0; }
-
-li { margin: 3px 0; line-height: 1.4; }
-
-.label { font-weight: 700; }
-
-.project-title { font-weight: 700; }
-
-.small { font-size: 13px; color: var(--muted); }
-
-.grid {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 8px;
+.header{
+  padding:16px;
+  border:1px solid var(--line);
+  border-radius:14px;
+  margin-bottom:12px;
 }
 
-@media (min-width: 860px) {
-  .grid { grid-template-columns: 1fr 1fr; gap: 16px; }
+.header-top{
+  display:grid;
+  grid-template-columns:1fr auto;
+}
+
+.name{
+  font-size:26px;
+  font-weight:800;
+}
+
+.subtitle{
+  color:var(--muted);
+}
+
+.contact{
+  text-align:right;
+  font-size:12px;
+  color:var(--muted);
+}
+
+.tags{
+  margin-top:10px;
+  display:flex;
+  flex-wrap:wrap;
+  gap:6px;
+}
+
+.tag{
+  background:#eef5ff;
+  border:1px solid #dce7ff;
+  padding:4px 8px;
+  border-radius:999px;
+  font-size:11px;
+}
+
+.grid{
+  display:grid;
+  grid-template-columns:0.95fr 1.65fr;
+  gap:12px;
+}
+
+.card{
+  border:1px solid var(--line);
+  border-radius:14px;
+  padding:12px;
+}
+
+.h2{
+  text-transform:uppercase;
+  font-size:12px;
+  margin-bottom:8px;
+  letter-spacing:.8px;
+}
+
+.list{
+  padding-left:16px;
+}
+
+.list li{
+  margin:4px 0;
+}
+
+.small{
+  color:var(--muted);
+}
+
+.divider{
+  height:1px;
+  background:var(--line);
+  margin:10px 0;
+}
+
+.project-title{
+  font-weight:800;
+}
+
+.page-break{
+  page-break-before:always;
 }
 </style>
 </head>
 
 <body>
+
 <div class="page">
 
-<header>
-  <h1>Ferhat Sanli</h1>
-  <div class="contact">
-    +31 6 23329713 |
-    ferhatsanli95@hotmail.com |
-    linkedin.com/in/ferhatsanli |
-    github.com/ferhatsanli
-  </div>
-  <div class="meta">Amsterdam, Netherlands | EU Citizenship (Bulgaria)</div>
-</header>
+<div class="header">
+<div class="header-top">
 
-<section>
-<h2>PROFILE</h2>
+<div>
+<div class="name">Ferhat Sanli</div>
+<div class="subtitle">Android Engineer — Kotlin • Jetpack Compose • MVVM • Clean Architecture</div>
+</div>
+
+<div class="contact">
+Amsterdam, Netherlands<br>
+EU Citizenship (Bulgaria)<br>
++31 6 23329713<br>
+ferhatsanli95@hotmail.com<br>
+linkedin.com/in/ferhatsanli<br>
+github.com/ferhatsanli
+</div>
+
+</div>
+
+<div class="tags">
+<span class="tag">Kotlin</span>
+<span class="tag">Android SDK</span>
+<span class="tag">Jetpack Compose</span>
+<span class="tag">MVVM</span>
+<span class="tag">Clean Architecture</span>
+<span class="tag">Coroutines</span>
+<span class="tag">REST APIs</span>
+<span class="tag">Retrofit</span>
+<span class="tag">Room</span>
+<span class="tag">JUnit</span>
+<span class="tag">MockK</span>
+<span class="tag">GitHub Actions</span>
+</div>
+
+</div>
+
+<div class="grid">
+
+<div class="card">
+
+<div class="h2">Android Expertise</div>
+
+<ul class="list">
+<li><b>Languages:</b> Kotlin, Java basics</li>
+<li><b>Architecture:</b> MVVM, Clean Architecture, Repository Pattern</li>
+<li><b>UI:</b> Jetpack Compose, Material 3, Navigation</li>
+<li><b>Networking:</b> Retrofit, REST APIs, Coroutines, Flow</li>
+<li><b>Persistence:</b> Room, DataStore</li>
+<li><b>Testing:</b> JUnit, MockK, Espresso, Compose UI Testing</li>
+<li><b>Tooling:</b> Android Studio, Gradle, Git, CI/CD</li>
+</ul>
+
+<div class="divider"></div>
+
+<div class="h2">Core Strengths</div>
+
+<ul class="list">
+<li>Designing maintainable Android applications using modern architecture patterns</li>
+<li>Writing clean, testable Kotlin code focused on long-term maintainability</li>
+<li>Strong debugging and root-cause analysis skills</li>
+<li>Performance-oriented development mindset</li>
+<li>Collaborative development in agile environments</li>
+</ul>
+
+<div class="divider"></div>
+
+<div class="h2">Languages</div>
+
+English — Upper Intermediate<br>
+Turkish — Native
+
+</div>
+
+<div class="card">
+
+<div class="h2">Profile</div>
+
 <p>
-Self-motivated and passionate Android Developer with a solid foundation in Kotlin, Jetpack Compose,
-and modern mobile application development. Background in Information Systems Engineering with
-hands-on experience in automation and backend development. Currently focused on building RESTful
-Android applications and UI components using Jetpack Compose.
-</p>
-</section>
-
-<section>
-<h2>EXPERIENCE</h2>
-
-<p><span class="label">Software Engineer — AKTEK</span>
-<span class="small"> | Oct 2022 – Feb 2023</span></p>
-<ul>
-<li>Developed and maintained automated workflows using UiPath.</li>
-<li>Built SQL automations and integrated backend systems with Oracle database.</li>
-<li>Designed automation strategy reducing memory usage by 20% and operational costs by 15%.</li>
-<li>Established KPIs to track automation performance and resource consumption.</li>
-</ul>
-
-<p style="margin-top:8px;"><span class="label">Software Engineer — VBM</span>
-<span class="small"> | Sep 2021 – Oct 2022</span></p>
-<ul>
-<li>Designed and implemented automation workflows in UiPath and VB.NET.</li>
-<li>Created custom C# activities and automated Java-based applications.</li>
-<li>Streamlined Excel tasks with VBA and UiPath.</li>
-<li>Reduced project delivery timelines from 6 months to 1 week through optimized automation solutions.</li>
-</ul>
-</section>
-
-<section>
-<h2>SKILLS</h2>
-
-<p><span class="label">Languages:</span>
-Kotlin, Python, C#, VB.NET, C/C++, SQL, JavaScript, Swift (Basic)
+Android Developer focused on building scalable mobile applications using Kotlin and modern Android architecture. 
+Experienced with Jetpack Compose, REST API integrations, and reactive programming with Coroutines and Flow. 
+Background in systems automation engineering provides strong debugging, reliability, and performance optimization skills. 
+Passionate about writing clean, maintainable code and delivering production-ready Android features.
 </p>
 
-<p><span class="label">Mobile Development:</span>
-Android, Jetpack Compose, XML Layouts, Material Design, Flutter,
-Native Android Development, Android SDK, Google Play Store Publishing Process,
-Android App Deployment, App Bundle (AAB), Release Management
-</p>
+<div class="divider"></div>
 
-<p><span class="label">Frameworks & Libraries:</span>
-Hilt, Dagger, Retrofit, Room, Coroutine, UiPath,
-JUnit, MockK, Espresso, Compose UI Testing, Navigation Component, WorkManager, DataStore
-</p>
-
-<p><span class="label">Architecture & Concepts:</span>
-OOP, Clean Architecture, MVC, REST API, Multithreading, Networking,
-MVVM, SOLID Principles, Design Patterns, Dependency Injection, Repository Pattern,
-Reactive Programming (Flow), State Management (Compose), CI/CD, Agile (Scrum)
-</p>
-
-<p><span class="label">Platforms & Tools:</span>
-Android Studio, Git, GitHub, Raspberry Pi, Linux, Windows, macOS,
-GitHub Actions, Gradle (Kotlin DSL), Proguard / R8, ADB, Postman
-</p>
-
-<p><span class="label">Automation:</span>
-UiPath, AutoHotkey, VBA
-</p>
-
-<p><span class="label">Soft Skills:</span>
-Problem-solving, Self-driven, Team player, Result-oriented, Continuous Learning Mindset
-</p>
-</section>
-<br>
-<br>
-<br>
-<br>
-<section>
-<h2>PROJECTS</h2>
+<div class="h2">Android Projects</div>
 
 <p class="project-title">Real-time Network Device Tracker</p>
-<ul>
-<li>Developed Android app fetching IP/MAC device lists from Raspberry Pi Node.js server.</li>
-<li>Implemented Retrofit + MVVM + Coroutines for robust REST communication.</li>
-<li>Achieved ~15 devices scan in &lt;5 seconds with real-time UI updates.</li>
+<ul class="list">
+<li>Developed Android application retrieving IP and MAC device lists from a Raspberry Pi backend.</li>
+<li>Implemented MVVM architecture with Retrofit and Coroutines for asynchronous networking.</li>
+<li>Optimized device scanning workflow to process ~15 devices within seconds while keeping UI responsive.</li>
 </ul>
 
 <p class="project-title">BringItems — Shopping List App</p>
-<ul>
-<li>Built responsive UI using Jetpack Compose and Material 3.</li>
-<li>Implemented Navigation Compose and real-time state management.</li>
-<li>Enabled sharing via Android Intent integration.</li>
+<ul class="list">
+<li>Built a modern Android application using Jetpack Compose and Material 3 UI components.</li>
+<li>Implemented Navigation Compose and predictable state management.</li>
+<li>Added Android Intent integration to enable cross-app sharing functionality.</li>
 </ul>
 
 <p class="project-title">Personal Expense Analyzer</p>
-<ul>
-<li>Developed CSV-based expense tracking with custom charts.</li>
-<li>Added savings target detection and analytical reporting features.</li>
+<ul class="list">
+<li>Created Android tool for processing CSV expense data and generating financial insights.</li>
+<li>Developed modular UI components supporting maintainable and extensible design.</li>
+<li>Implemented data analysis logic to highlight spending patterns and savings opportunities.</li>
 </ul>
-</section>
-
-<section class="grid">
-<div>
-<h2>EDUCATION</h2>
-<ul>
-<li>B.Sc. Information Systems Engineering — 2020</li>
-<li>High School Diploma in Database Programming — 2014</li>
-</ul>
-</div>
-
-<div>
-<h2>VOLUNTEERING</h2>
-<ul>
-<li>BILMOK – Foyer Area Supervisor (2019)</li>
-</ul>
-</div>
-</section>
-
-<section class="grid">
-<div>
-<h2>CERTIFICATIONS</h2>
-<ul>
-<li>Google Associate Android Developer (Kotlin)</li>
-<li>Kotlin for Android Developers (JetBrains)</li>
-</ul>
-</div>
-
-<div>
-<h2>COURSES</h2>
-<ul>
-<li>Android Kotlin Development — Udemy</li>
-<li>Android Mobile Applications – Advanced Level — Udemy</li>
-</ul>
-</div>
-</section>
-
-<section>
-<h2>LANGUAGES</h2>
-<ul>
-<li>English — Upper Intermediate</li>
-<li>Turkish — Native</li>
-</ul>
-</section>
 
 </div>
+
+</div>
+</div>
+
+<div class="page page-break">
+
+<div class="header">
+<b>Professional Experience — Ferhat Sanli</b>
+</div>
+
+<div class="card">
+
+<div class="h2">Software Engineer — AKTEK</div>
+<span class="small">Oct 2022 – Feb 2023</span>
+
+<ul class="list">
+<li>Developed and maintained enterprise automation workflows integrating backend systems and Oracle databases.</li>
+<li>Designed performance optimization strategies reducing memory usage by approximately 20%.</li>
+<li>Implemented monitoring KPIs and analytics for operational workflow reliability.</li>
+<li>Worked on debugging, system integration, and reliability engineering in production environments.</li>
+</ul>
+
+<div class="divider"></div>
+
+<div class="h2">Software Engineer — VBM</div>
+<span class="small">Sep 2021 – Oct 2022</span>
+
+<ul class="list">
+<li>Designed automation solutions using UiPath and VB.NET to streamline enterprise workflows.</li>
+<li>Developed reusable components and custom C# activities for process automation.</li>
+<li>Reduced project delivery time from six months to approximately one week through process optimization.</li>
+<li>Focused on debugging complex workflows and improving system stability.</li>
+</ul>
+
+</div>
+
+<div class="card">
+
+<div class="h2">Technical Skills</div>
+
+<ul class="list">
+<li><b>Languages:</b> Kotlin, Python, C#, VB.NET, SQL, JavaScript</li>
+<li><b>Mobile Development:</b> Android SDK, Jetpack Compose, XML Layouts, Material Design</li>
+<li><b>Libraries:</b> Retrofit, Room, Hilt, Dagger, Navigation Component, WorkManager</li>
+<li><b>Testing:</b> JUnit, MockK, Espresso, Compose UI Testing</li>
+<li><b>Tools:</b> Android Studio, Git, GitHub, Gradle, CI/CD, Postman</li>
+</ul>
+
+</div>
+
+<div class="card">
+
+<div class="h2">Education</div>
+
+B.Sc. Information Systems Engineering — 2020
+
+<div class="divider"></div>
+
+<div class="h2">Certifications</div>
+
+Google Associate Android Developer (Kotlin)<br>
+Kotlin for Android Developers — JetBrains
+
+<div class="divider"></div>
+
+<div class="h2">Courses</div>
+
+Android Kotlin Development — Udemy<br>
+Android Mobile Applications – Advanced Level — Udemy
+
+</div>
+
+</div>
+
 </body>
 </html>

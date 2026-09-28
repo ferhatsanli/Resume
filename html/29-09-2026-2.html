@@ -1,0 +1,778 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Ferhat Sanli - Android Developer Resume</title>
+
+<style>
+/*
+  PRINT TARGET
+  A4: 210mm × 297mm
+  Header: 58mm
+  Content: 239mm
+  Total: 297mm
+
+  Chrome:
+  Paper size: A4
+  Margins: None
+  Scale: 100%
+  Headers and footers: Off
+  Background graphics: On
+*/
+
+@page {
+  size: A4 portrait;
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 210mm;
+  height: 297mm;
+  margin: 0;
+  padding: 0;
+  background: #ffffff;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #2b2b2b;
+  font-size: 10.5px;
+  line-height: 1.34;
+  -webkit-print-color-adjust: exact;
+  print-color-adjust: exact;
+}
+
+.page {
+  width: 210mm;
+  height: 297mm;
+  margin: 0;
+  padding: 0;
+  background: #ffffff;
+  page-break-after: avoid;
+  break-after: avoid-page;
+}
+
+/* =========================================================
+   HEADER — EXACT HEIGHT: 58mm
+   ========================================================= */
+
+.header {
+  position: relative;
+  width: 210mm;
+  height: 58mm;
+  padding: 14mm 21mm 9mm 21mm;
+  background: #071f49;
+  color: #ffffff;
+}
+
+.header h1 {
+  margin: 0;
+  padding: 0;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 30px;
+  line-height: 1.05;
+  font-weight: 500;
+  color: #ffffff;
+}
+
+.header h2 {
+  margin: 1.5mm 0 5.5mm 0;
+  padding: 0;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 19px;
+  line-height: 1.1;
+  font-weight: 400;
+  color: #ffffff;
+}
+
+.header-line {
+  width: 106mm;
+  height: 1px;
+  margin: 0 0 4mm 0;
+  background: #304fa3;
+}
+
+.contact-grid {
+  width: 118mm;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 8mm;
+  row-gap: 1mm;
+  font-size: 9.5px;
+  line-height: 1.3;
+  font-weight: 600;
+}
+
+.contact-grid a {
+  color: #ffffff;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.photo {
+  position: absolute;
+  right: 23mm;
+  top: 12.5mm;
+  width: 31mm;
+  height: 31mm;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center 35%;
+  border: 2px solid rgba(255, 255, 255, 0.72);
+}
+
+/* =========================================================
+   CONTENT — EXACT HEIGHT: 239mm
+   58mm + 239mm = 297mm
+   ========================================================= */
+
+.content {
+  width: 210mm;
+  height: 239mm;
+  display: grid;
+  grid-template-columns: 60% 40%;
+  background: #ffffff;
+}
+
+.left-column {
+  height: 239mm;
+  padding: 10mm 9mm 7mm 17mm;
+  border-right: 1px solid #e2e5eb;
+}
+
+.right-column {
+  height: 239mm;
+  padding: 10mm 16mm 7mm 9mm;
+}
+
+/* =========================================================
+   GENERAL TYPOGRAPHY
+   ========================================================= */
+
+.section {
+  margin: 0 0 6mm 0;
+  padding: 0;
+  break-inside: avoid;
+  page-break-inside: avoid;
+}
+
+.section:last-child {
+  margin-bottom: 0;
+}
+
+.section-title {
+  margin: 0 0 4mm 0;
+  padding: 0 0 1.5mm 0;
+  border-bottom: 1px solid #d8dce5;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 16px;
+  line-height: 1.1;
+  font-weight: 400;
+  color: #24375f;
+}
+
+ul {
+  margin: 1.5mm 0 0 0;
+  padding: 0 0 0 4.5mm;
+}
+
+li {
+  margin: 0 0 1mm 0;
+  padding: 0;
+}
+
+li:last-child {
+  margin-bottom: 0;
+}
+
+/* =========================================================
+   EXPERIENCE
+   ========================================================= */
+
+.experience-section {
+  margin-bottom: 4.5mm;
+}
+
+.item {
+  margin: 0 0 4.5mm 0;
+  padding: 0;
+  break-inside: avoid;
+  page-break-inside: avoid;
+}
+
+.item:last-child {
+  margin-bottom: 0;
+}
+
+.item-title {
+  margin: 0;
+  padding: 0;
+  font-size: 10.8px;
+  line-height: 1.25;
+  font-weight: 700;
+  color: #222222;
+}
+
+.company {
+  margin: 0.4mm 0 0 0;
+  padding: 0;
+  font-weight: 600;
+  line-height: 1.25;
+}
+
+.date {
+  margin: 0.4mm 0 0 0;
+  padding: 0;
+  font-size: 9.5px;
+  line-height: 1.25;
+  font-style: italic;
+  color: #555555;
+}
+
+.experience-list {
+  margin-top: 1.5mm;
+}
+
+.experience-list li {
+  margin-bottom: 0.9mm;
+}
+
+/* =========================================================
+   EDUCATION
+   ========================================================= */
+
+.education-section {
+  margin: 0 0 4mm 0;
+}
+
+.education-section .section-title {
+  margin-bottom: 2.5mm;
+}
+
+.edu-university {
+  margin: 0 0 0.6mm 0;
+  font-size: 10.7px;
+  line-height: 1.25;
+  font-weight: 700;
+}
+
+.edu-degree {
+  margin: 0 0 0.3mm 0;
+  line-height: 1.25;
+  font-weight: 600;
+}
+
+.edu-field {
+  margin: 0;
+  font-size: 10.2px;
+  line-height: 1.25;
+}
+
+/* =========================================================
+   LANGUAGES
+   ========================================================= */
+
+.languages-section {
+  margin: 0;
+}
+
+.languages-section .section-title {
+  margin-bottom: 2.5mm;
+}
+
+.language-item {
+  margin: 0 0 0.7mm 0;
+  padding: 0;
+  font-size: 10.2px;
+  line-height: 1.3;
+}
+
+.language-item:last-child {
+  margin-bottom: 0;
+}
+
+/* =========================================================
+   PROJECTS
+   ========================================================= */
+
+.projects-section {
+  margin-bottom: 6mm;
+}
+
+.project {
+  margin: 0 0 5.5mm 0;
+  padding: 0;
+  break-inside: avoid;
+  page-break-inside: avoid;
+}
+
+.project:last-child {
+  margin-bottom: 0;
+}
+
+.project-title {
+  margin: 0 0 1.5mm 0;
+  padding: 0;
+  font-size: 11.5px;
+  line-height: 1.2;
+  font-weight: 700;
+  color: #222222;
+}
+
+.project-points {
+  margin: 0;
+  padding-left: 4.5mm;
+}
+
+.project-points li {
+  margin-bottom: 1.2mm;
+}
+
+/* =========================================================
+   SKILLS
+   ========================================================= */
+
+.skills-section {
+  margin: 0;
+}
+
+.skills-section .section-title {
+  margin-bottom: 3.5mm;
+}
+
+.skills-group {
+  margin: 0 0 2.7mm 0;
+  padding: 0;
+}
+
+.skills-group:last-child {
+  margin-bottom: 0;
+}
+
+.skills-label {
+  margin: 0 0 0.4mm 0;
+  padding: 0;
+  font-weight: 700;
+  line-height: 1.25;
+  color: #222222;
+}
+
+.skills-values {
+  margin: 0;
+  padding: 0;
+  line-height: 1.3;
+}
+
+/* =========================================================
+   PRINT
+   ========================================================= */
+
+@media print {
+
+  html,
+  body {
+    width: 210mm;
+    height: 297mm;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+  .page {
+    width: 210mm;
+    height: 297mm;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+  .header {
+    height: 58mm;
+  }
+
+  .content {
+    height: 239mm;
+  }
+
+  .left-column,
+  .right-column {
+    height: 239mm;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<div class="page">
+
+  <header class="header">
+
+    <h1>Ferhat Sanli</h1>
+
+    <h2>Android Developer</h2>
+
+    <div class="header-line"></div>
+
+    <div class="contact-grid">
+
+      <a href="https://www.linkedin.com/in/ferhatsanli">
+        linkedin.com/in/ferhatsanli
+      </a>
+
+      <a href="mailto:ferhatsanli95@hotmail.com">
+        ferhatsanli95@hotmail.com
+      </a>
+
+      <a href="https://github.com/ferhatsanli">
+        github.com/ferhatsanli
+      </a>
+
+      <a href="tel:+31623329713">
+        +31 6 23329713
+      </a>
+
+    </div>
+
+    <img
+      class="photo"
+      src="Profile.jpg"
+      alt="Ferhat Sanli profile photo"
+    >
+
+  </header>
+
+
+  <div class="content">
+
+    <!-- ===================================================
+         LEFT COLUMN
+         =================================================== -->
+
+    <main class="left-column">
+
+      <section class="section experience-section">
+
+        <div class="section-title">
+          Experience
+        </div>
+
+
+        <div class="item">
+
+          <div class="item-title">
+            Independent Android Developer
+          </div>
+
+          <div class="company">
+            Freelance
+          </div>
+
+          <div class="date">
+            May 2023 to Present
+          </div>
+
+          <ul class="experience-list">
+
+            <li>
+              Worked remotely on small-scale Android development tasks and ongoing application improvements.
+            </li>
+
+            <li>
+              Resolved bugs, investigated application issues, and implemented targeted fixes.
+            </li>
+
+            <li>
+              Developed and refined smaller features based on evolving requirements and feedback.
+            </li>
+
+            <li>
+              Continued improving practical Android development skills through independent projects and real-world problem solving.
+            </li>
+
+          </ul>
+
+        </div>
+
+
+        <div class="item">
+
+          <div class="item-title">
+            Android Developer
+          </div>
+
+          <div class="company">
+            AKTEK
+          </div>
+
+          <div class="date">
+            October 2022 to May 2023
+          </div>
+
+          <ul class="experience-list">
+
+            <li>
+              Contributed to internal Android applications used to monitor server-side events and operational processes.
+            </li>
+
+            <li>
+              Worked with <b>Firebase</b> and <b>Room</b> to handle incoming data, local persistence, and historical records.
+            </li>
+
+            <li>
+              Built and maintained data-driven <b>Jetpack Compose</b> UI for displaying logs and operational information.
+            </li>
+
+            <li>
+              Supported debugging, issue investigation, and incremental improvements as part of the development team.
+            </li>
+
+          </ul>
+
+        </div>
+
+
+        <div class="item">
+
+          <div class="item-title">
+            Android Developer
+          </div>
+
+          <div class="company">
+            VBM
+          </div>
+
+          <div class="date">
+            September 2021 to October 2022
+          </div>
+
+          <ul class="experience-list">
+
+            <li>
+              Started professional Android development by building internal tools for monitoring <b>UiPath Orchestrator</b> processes.
+            </li>
+
+            <li>
+              Worked with <b>Kotlin</b>, <b>Retrofit</b>, REST APIs and <b>Firebase</b> to retrieve and display backend process data.
+            </li>
+
+            <li>
+              Built dashboards with <b>Jetpack Compose</b> to visualize process status, job execution data, and system events.
+            </li>
+
+            <li>
+              Gained hands-on experience with Android architecture, API integration, debugging, and iterative feature development.
+            </li>
+
+          </ul>
+
+        </div>
+
+      </section>
+
+
+      <section class="section education-section">
+
+        <div class="section-title">
+          Education
+        </div>
+
+        <div class="edu-university">
+          Muğla Sıtkı Koçman University
+        </div>
+
+        <div class="edu-degree">
+          Bachelor of Science
+        </div>
+
+        <div class="edu-field">
+          Information Systems Engineering
+        </div>
+
+      </section>
+
+
+      <section class="section languages-section">
+
+        <div class="section-title">
+          Languages
+        </div>
+
+        <div class="language-item">
+          <b>English</b> — Professional Working Proficiency
+        </div>
+
+        <div class="language-item">
+          <b>Turkish</b> — Native
+        </div>
+
+      </section>
+
+    </main>
+
+
+    <!-- ===================================================
+         RIGHT COLUMN
+         =================================================== -->
+
+    <aside class="right-column">
+
+      <section class="section projects-section">
+
+        <div class="section-title">
+          Projects
+        </div>
+
+
+        <div class="project">
+
+          <div class="project-title">
+            ComApp
+          </div>
+
+          <ul class="project-points">
+
+            <li>
+              Built a remote communication system connecting an
+              <b>Android application</b> with a <b>Raspberry Pi</b>.
+            </li>
+
+            <li>
+              Implemented real-time command delivery and execution results using
+              <b>Firebase Realtime Database</b>.
+            </li>
+
+            <li>
+              Added an alternative domain-based <b>REST API</b>
+              communication path using <b>Retrofit</b>.
+            </li>
+
+            <li>
+              Developed the Android client with <b>Kotlin</b> and
+              <b>Jetpack Compose</b>.
+            </li>
+
+          </ul>
+
+        </div>
+
+
+        <div class="project">
+
+          <div class="project-title">
+            WhoConnected
+          </div>
+
+          <ul class="project-points">
+
+            <li>
+              Built an Android application for discovering and tracking devices
+              on local networks, using <b>Nmap</b> for network discovery and analysis.
+            </li>
+
+            <li>
+              Developed real-time device visibility and network monitoring
+              features for practical troubleshooting.
+            </li>
+
+            <li>
+              Integrated <b>REST API</b> communication using an
+              <b>MVVM</b>-based application structure.
+            </li>
+
+            <li>
+              Developed the Android client with <b>Kotlin</b> and
+              <b>Jetpack Compose</b>, with focus on responsive UI and performance.
+            </li>
+
+          </ul>
+
+        </div>
+
+      </section>
+
+
+      <section class="section skills-section">
+
+        <div class="section-title">
+          Skills
+        </div>
+
+
+        <div class="skills-group">
+
+          <div class="skills-label">
+            Android
+          </div>
+
+          <div class="skills-values">
+            Kotlin, Jetpack Compose, Android SDK, StateFlow
+          </div>
+
+        </div>
+
+
+        <div class="skills-group">
+
+          <div class="skills-label">
+            Architecture
+          </div>
+
+          <div class="skills-values">
+            MVVM, Clean Architecture, Hilt
+          </div>
+
+        </div>
+
+
+        <div class="skills-group">
+
+          <div class="skills-label">
+            Data &amp; APIs
+          </div>
+
+          <div class="skills-values">
+            Firebase, Retrofit, REST APIs, JSON, Room
+          </div>
+
+        </div>
+
+
+        <div class="skills-group">
+
+          <div class="skills-label">
+            Systems &amp; Networking
+          </div>
+
+          <div class="skills-values">
+            Linux, Raspberry Pi, Nmap, Ktor
+          </div>
+
+        </div>
+
+
+        <div class="skills-group">
+
+          <div class="skills-label">
+            Development
+          </div>
+
+          <div class="skills-values">
+            GitHub Actions, CI/CD
+          </div>
+
+        </div>
+
+      </section>
+
+    </aside>
+
+  </div>
+
+</div>
+
+</body>
+</html>

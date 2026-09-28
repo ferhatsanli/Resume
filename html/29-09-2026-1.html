@@ -1,0 +1,602 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Ferhat Sanli - Android Developer Resume</title>
+
+<style>
+@page {
+  size: A4;
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background: #ffffff;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #2b2b2b;
+  font-size: 11px;
+  line-height: 1.45;
+}
+
+.page {
+  width: 210mm;
+  min-height: 297mm;
+  margin: 0 auto;
+  background: #ffffff;
+}
+
+/* ---------- HEADER ---------- */
+
+.header {
+  height: 62mm;
+  padding: 16mm 22mm 11mm 22mm;
+  position: relative;
+  background: #071f49;
+  color: #ffffff;
+}
+
+.header h1 {
+  margin: 0;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 31px;
+  font-weight: 500;
+  color: #ffffff;
+}
+
+.header h2 {
+  margin: 2mm 0 7mm 0;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 21px;
+  font-weight: 400;
+  color: #ffffff;
+}
+
+.header-line {
+  width: 105mm;
+  height: 1px;
+  margin-bottom: 5mm;
+  background: #304fa3;
+}
+
+.contact-grid {
+  width: 116mm;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 9mm;
+  row-gap: 1.5mm;
+  font-size: 10px;
+  line-height: 1.45;
+  font-weight: 600;
+}
+
+.contact-grid a {
+  color: #ffffff;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.photo {
+  position: absolute;
+  right: 24mm;
+  top: 14mm;
+  width: 31mm;
+  height: 31mm;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center 35%;
+  border: 2px solid rgba(255, 255, 255, 0.70);
+}
+
+/* ---------- MAIN LAYOUT ---------- */
+
+.content {
+  display: grid;
+  grid-template-columns: minmax(0, 3fr) minmax(0, 2fr);
+  min-height: 235mm;
+}
+
+.left-column {
+  padding: 14mm 10mm 12mm 18mm;
+  border-right: 1px solid #e2e5eb;
+}
+
+.right-column {
+  padding: 14mm 18mm 12mm 10mm;
+}
+
+/* ---------- GENERAL ---------- */
+
+.section {
+  margin-bottom: 9mm;
+}
+
+.section:last-child {
+  margin-bottom: 0;
+}
+
+.section-title {
+  margin: 0 0 6mm 0;
+  padding-bottom: 2mm;
+  border-bottom: 1px solid #d8dce5;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 17px;
+  font-weight: 400;
+  color: #24375f;
+}
+
+.item {
+  margin-bottom: 6.5mm;
+}
+
+.item:last-child {
+  margin-bottom: 0;
+}
+
+.item-title {
+  font-size: 11px;
+  font-weight: 700;
+  color: #222222;
+}
+
+.company {
+  margin-top: 0.5mm;
+  font-weight: 600;
+}
+
+.date {
+  margin-top: 0.5mm;
+  font-size: 10px;
+  font-style: italic;
+  color: #555555;
+}
+
+ul {
+  margin: 2mm 0 0 0;
+  padding-left: 5mm;
+}
+
+li {
+  margin-bottom: 1.5mm;
+}
+
+/* ---------- EXPERIENCE ---------- */
+
+.experience-list li {
+  margin-bottom: 1.4mm;
+}
+
+/* ---------- PROJECTS ---------- */
+
+.project {
+  margin-bottom: 7mm;
+}
+
+.project:last-child {
+  margin-bottom: 0;
+}
+
+.project-title {
+  margin-bottom: 2mm;
+  font-size: 12px;
+  font-weight: 700;
+  color: #222222;
+}
+
+.project-points {
+  margin: 0;
+  padding-left: 5mm;
+}
+
+.project-points li {
+  margin-bottom: 1.6mm;
+}
+
+/* ---------- SKILLS ---------- */
+
+.skills-section {
+  margin-top: 1mm;
+}
+
+.skills-group {
+  margin-bottom: 3.5mm;
+}
+
+.skills-group:last-child {
+  margin-bottom: 0;
+}
+
+.skills-label {
+  margin-bottom: 0.6mm;
+  font-weight: 700;
+  color: #222222;
+}
+
+/* ---------- EDUCATION ---------- */
+
+.education-section {
+  margin-top: 1mm;
+  margin-bottom: 6mm;
+}
+
+.education-section .section-title {
+  margin-bottom: 3.5mm;
+}
+
+.edu-university {
+  margin-bottom: 1mm;
+  font-weight: 700;
+  font-size: 11px;
+}
+
+.edu-degree {
+  margin-bottom: 0.5mm;
+  font-weight: 600;
+}
+
+.edu-field {
+  font-size: 10.5px;
+}
+
+/* ---------- LANGUAGES ---------- */
+
+.languages-section {
+  margin-top: 0;
+}
+
+.languages-section .section-title {
+  margin-bottom: 3.5mm;
+}
+
+.language-item {
+  margin-bottom: 1mm;
+  font-size: 10.5px;
+}
+</style>
+</head>
+
+<body>
+
+<div class="page">
+
+  <header class="header">
+
+    <h1>Ferhat Sanli</h1>
+    <h2>Android Developer</h2>
+
+    <div class="header-line"></div>
+
+    <div class="contact-grid">
+
+      <a href="https://www.linkedin.com/in/ferhatsanli">
+        linkedin.com/in/ferhatsanli
+      </a>
+
+      <a href="mailto:ferhatsanli95@hotmail.com">
+        ferhatsanli95@hotmail.com
+      </a>
+
+      <a href="https://github.com/ferhatsanli">
+        github.com/ferhatsanli
+      </a>
+
+      <a href="tel:+31623329713">
+        +31 6 23329713
+      </a>
+
+    </div>
+
+    <img
+      class="photo"
+      src="Profile.jpeg"
+      alt="Ferhat Sanli profile photo"
+    >
+
+  </header>
+
+
+  <div class="content">
+
+    <!-- LEFT COLUMN -->
+
+    <main class="left-column">
+
+      <section class="section">
+
+        <div class="section-title">
+          Experience
+        </div>
+
+
+        <div class="item">
+
+          <div class="item-title">
+            Independent Android Developer
+          </div>
+
+          <div class="company">
+            Freelance
+          </div>
+
+          <div class="date">
+            May 2023 to Present
+          </div>
+
+          <ul class="experience-list">
+
+            <li>
+              Worked remotely on small-scale Android development tasks and ongoing application improvements.
+            </li>
+
+            <li>
+              Resolved bugs, investigated application issues, and implemented targeted fixes.
+            </li>
+
+            <li>
+              Developed and refined smaller features based on evolving requirements and feedback.
+            </li>
+
+            <li>
+              Continued improving practical Android development skills through independent projects and real-world problem solving.
+            </li>
+
+          </ul>
+
+        </div>
+
+
+        <div class="item">
+
+          <div class="item-title">
+            Android Developer
+          </div>
+
+          <div class="company">
+            AKTEK
+          </div>
+
+          <div class="date">
+            October 2022 to May 2023
+          </div>
+
+          <ul class="experience-list">
+
+            <li>
+              Contributed to internal Android applications used to monitor server-side events and operational processes.
+            </li>
+
+            <li>
+              Worked with <b>Firebase</b> and <b>Room</b> to handle incoming data, local persistence, and historical records.
+            </li>
+
+            <li>
+              Built and maintained data-driven <b>Jetpack Compose</b> UI for displaying logs and operational information.
+            </li>
+
+            <li>
+              Supported debugging, issue investigation, and incremental improvements as part of the development team.
+            </li>
+
+          </ul>
+
+        </div>
+
+
+        <div class="item">
+
+          <div class="item-title">
+            Android Developer
+          </div>
+
+          <div class="company">
+            VBM
+          </div>
+
+          <div class="date">
+            September 2021 to October 2022
+          </div>
+
+          <ul class="experience-list">
+
+            <li>
+              Started professional Android development by building internal tools for monitoring <b>UiPath Orchestrator</b> processes.
+            </li>
+
+            <li>
+              Worked with <b>Kotlin</b>, <b>Retrofit</b>, REST APIs and <b>Firebase</b> to retrieve and display backend process data.
+            </li>
+
+            <li>
+              Built dashboards with <b>Jetpack Compose</b> to visualize process status, job execution data, and system events.
+            </li>
+
+            <li>
+              Gained hands-on experience with Android architecture, API integration, debugging, and iterative feature development.
+            </li>
+
+          </ul>
+
+        </div>
+
+      </section>
+
+
+      <section class="section education-section">
+
+        <div class="section-title">
+          Education
+        </div>
+
+        <div class="edu-university">
+          Muğla Sıtkı Koçman University
+        </div>
+
+        <div class="edu-degree">
+          Bachelor of Science
+        </div>
+
+        <div class="edu-field">
+          Information Systems Engineering
+        </div>
+
+      </section>
+
+
+      <section class="section languages-section">
+
+        <div class="section-title">
+          Languages
+        </div>
+
+        <div class="language-item">
+          <b>English</b> — Professional Working Proficiency
+        </div>
+
+        <div class="language-item">
+          <b>Turkish</b> — Native
+        </div>
+
+      </section>
+
+    </main>
+
+
+    <!-- RIGHT COLUMN -->
+
+    <aside class="right-column">
+
+      <section class="section">
+
+        <div class="section-title">
+          Projects
+        </div>
+
+
+        <div class="project">
+
+          <div class="project-title">
+            ComApp
+          </div>
+
+          <ul class="project-points">
+
+            <li>
+              Built a remote communication system connecting an
+              <b>Android application</b> with a <b>Raspberry Pi</b>.
+            </li>
+
+            <li>
+              Implemented real-time command delivery and execution results using
+              <b>Firebase Realtime Database</b>.
+            </li>
+
+            <li>
+              Added an alternative domain-based <b>REST API</b>
+              communication path using <b>Retrofit</b>.
+            </li>
+
+            <li>
+              Developed the Android client with <b>Kotlin</b> and
+              <b>Jetpack Compose</b>.
+            </li>
+
+          </ul>
+
+        </div>
+
+
+        <div class="project">
+
+          <div class="project-title">
+            WhoConnected
+          </div>
+
+          <ul class="project-points">
+
+            <li>
+              Built an Android application for discovering and tracking devices
+              on local networks, using <b>Nmap</b> for network discovery and analysis.
+            </li>
+
+            <li>
+              Developed real-time device visibility and network monitoring
+              features for practical troubleshooting.
+            </li>
+
+            <li>
+              Integrated <b>REST API</b> communication using an
+              <b>MVVM</b>-based application structure.
+            </li>
+
+            <li>
+              Developed the Android client with <b>Kotlin</b> and
+              <b>Jetpack Compose</b>, with focus on responsive UI and performance.
+            </li>
+
+          </ul>
+
+        </div>
+
+      </section>
+
+
+      <section class="section skills-section">
+
+        <div class="section-title">
+          Skills
+        </div>
+
+        <div class="skills-group">
+          <div class="skills-label">
+            Android
+          </div>
+          Kotlin, Jetpack Compose, Android SDK, StateFlow
+        </div>
+
+        <div class="skills-group">
+          <div class="skills-label">
+            Architecture
+          </div>
+          MVVM, Clean Architecture, Hilt
+        </div>
+
+        <div class="skills-group">
+          <div class="skills-label">
+            Data &amp; APIs
+          </div>
+          Firebase, Retrofit, REST APIs, JSON, Room
+        </div>
+
+        <div class="skills-group">
+          <div class="skills-label">
+            Systems &amp; Networking
+          </div>
+          Linux, Raspberry Pi, Nmap, Ktor
+        </div>
+
+        <div class="skills-group">
+          <div class="skills-label">
+            Development
+          </div>
+          GitHub Actions, CI/CD
+        </div>
+
+      </section>
+
+    </aside>
+
+  </div>
+
+</div>
+
+</body>
+</html>
